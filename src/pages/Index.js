@@ -7,7 +7,7 @@ export default function Index() {
   return (
     <div>
       <Layout>
-        <h1>Hello Bootcamp</h1>
+        <h1 className="title">Hello Bootcamp</h1>
         <p>
           I'm Dimas, a jr. fullStack developer{' '}
           <Link to="/me">Know more about me</Link>{' '}

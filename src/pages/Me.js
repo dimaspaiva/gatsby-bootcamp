@@ -6,7 +6,7 @@ export default function Me() {
   return (
     <div>
       <Layout>
-        <h1>About</h1>
+        <h1 className="title">About</h1>
         <p>
           Here u can know about me, a junior fullstack developer, living em
           Pouso Alegre, Minas Gerais, Brasil
