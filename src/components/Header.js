@@ -1,7 +1,19 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 
 export default function Header() {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
+  console.log(data.site.siteMetadata.title)
+
   return (
     <header className="navHeader">
       <nav className="navBar">
@@ -20,7 +32,7 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <h1 className="logo">Dimas Paiva</h1>
+      <h1 className="logo">{data.site.siteMetadata.title}</h1>
     </header>
   )
 }

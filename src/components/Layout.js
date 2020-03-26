@@ -7,10 +7,10 @@ import '../styles/index.css'
 
 export default function Layout(props) {
   return (
-    <div>
+    <>
       <Header />
-      {props.children}
+      <div className="container">{props.children}</div>
       <Footer />
-    </div>
+    </>
   )
 }

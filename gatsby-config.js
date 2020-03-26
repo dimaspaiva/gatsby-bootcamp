@@ -1,9 +1,16 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    author: 'Dimas AL Paiva',
+    title: 'Gatsby Bootcamp',
+  },
+  plugins: [
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`,
+      },
+    },
+    'gatsby-transformer-remark',
+  ],
 }
