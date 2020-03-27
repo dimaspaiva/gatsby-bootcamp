@@ -47,6 +47,7 @@
   width: 100%;
   min-height: 88.5vh;
   padding: 0 calc(100vw - 1440px);
+  padding-bottom: 6vh;
   background: linear-gradient(-135deg, #ccf5cc, #daeee2);
 }
 
